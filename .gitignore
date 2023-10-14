@@ -9,7 +9,7 @@ bin
 .log
 
 # BlueJ files
-.ctxt
+.ctxtgit 
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

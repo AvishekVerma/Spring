@@ -3,6 +3,8 @@
 bin
 .settings
 .project
+module-info.java
+springlib
 # Compiled class file
 .class
 

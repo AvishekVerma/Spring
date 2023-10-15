@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.avishek.comp.WishMessageGenerator;
 
-public class MainApp {
+public class UsingCoreJavaApp {
 
 	public static void main(String[] args) {
 		WishMessageGenerator generator = new WishMessageGenerator();

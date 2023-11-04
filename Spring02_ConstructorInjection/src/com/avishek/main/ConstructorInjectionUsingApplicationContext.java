@@ -1,4 +1,4 @@
-package com.avishek.test;
+package com.avishek.main;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.avishek.comp.WishMessageGenerator;
 
-public class SetterInjectionUsingApplicationContext {
+public class ConstructorInjectionUsingApplicationContext {
 
 	public static void main(String[] args) throws Exception {
 
@@ -38,3 +38,8 @@ public class SetterInjectionUsingApplicationContext {
 		factory.close();
 	}
 }
+
+
+
+
+

@@ -1,5 +1,10 @@
-package com.avishek.test;
+ package com.avishek.main;
 
+import org.springframework.core.io.FileSystemResource;
+
+//
+//
+//
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.FileSystemResource;
 
@@ -9,8 +14,8 @@ import com.avishek.comp.WishMessageGenerator;
 public class SetterInjection {
 
 	public static void main(String[] args) {
-		
-		FileSystemResource resource = new FileSystemResource("src/com/avishek/applicationContext.xml");
+		FileSystemResource res = new FileSystemResource("");
+		FileSystemResource resource = new FileSystemResource("src/com/avishek/cfg/applicationContext.xml");
 		System.out.println("*************BeanFactory container starting**********");
 		XmlBeanFactory factory = new XmlBeanFactory(resource);
 		System.out.println("************** BeanFactory container started**********");

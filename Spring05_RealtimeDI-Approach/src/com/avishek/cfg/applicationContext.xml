@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+	 
+    <bean id="fFlight" class="com.avishek.comp.FirstFlight"/>
+    <bean id="dtdc" class="com.avishek.comp.DTDC"/>
+    <bean id="bDart" class="com.avishek.comp.BlueDart"/>
+    
+    <bean id="fpkt" class="com.avishek.comp.Flipkart">
+    	<property name="discount" value="30f"/>
+    	<property name="courier" ref="bDart"/>
+    </bean>
+ 
+</beans>

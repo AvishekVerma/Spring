@@ -14,6 +14,7 @@ public class ConstructorInjectionApp {
 		
 		System.out.println("*************BeanFactory container starting**********");
 		XmlBeanFactory factory = new XmlBeanFactory(resource);
+//		System.out.println("Bean Factory : " + factory);
 		System.out.println("************** BeanFactory container started**********\n");
 
 		WishMessageGenerator wishMessage = factory.getBean("wmg", WishMessageGenerator.class);

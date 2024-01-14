@@ -4,20 +4,24 @@ import java.util.Date;
 
 import com.avishek.comp.WishMessageGenerator;
 
-public class UsingCoreJavaApp {
+public class MainApp {
 
 	public static void main(String[] args) {
+
 		WishMessageGenerator generator = new WishMessageGenerator();
-		System.out.println("Target object Before setter injection is :: "+generator);
-		
-		Date date = new Date();	
-		System.out.println("Dependent object is :: "+date);
-		
+		System.out.println("Targer Object Before Setter Injection is :: " + generator);
+
+		Date date = new Date();
+		System.out.println("Dependent Object is :: " + date);
+
 		generator.setDate(date);
-		System.out.println("Target object after setter Injection :: "+generator);
-		
+
+		System.out.println("Target Object after Setter Injection :: " + generator);
+
+		System.out.println();
+
 		String result = generator.generateMessage("Avishek");
 		System.out.println(result);
-	}
 
+	}
 }
